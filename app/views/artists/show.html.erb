@@ -1,0 +1,15 @@
+<h3>Artist Show Page</h3>
+
+<div>
+    <% @artist.songs.each do |song| %>
+        <%= link_to song.title, song_path(song) %>
+    <% end %>
+</div>
+
+<div>
+    <ul>
+        <% @artist.songs.each do |song| %>
+            <%= song.title %>
+        <% end %>
+    </ul>    
+</div>
